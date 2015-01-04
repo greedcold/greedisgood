@@ -17,7 +17,7 @@ gem "paperclip-dropbox", ">= 1.1.7"
 gem "figaro"
 gem 'devise'
 gem 'rubocop', require: false
-
+gem 'simple_form'
 
 
 

@@ -1,29 +1,7 @@
-<%= form_for(@listing) do |f| %>
-  <% if @listing.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@listing.errors.count, "error") %> prohibited this listing from being saved:</h2>
-
-      <ul>
-      <% @listing.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="form-group">
-    <%= f.label :data %><br>
-    <%= f.text_field :data, class: "form-control" %>
-  </div>
-  <div class="form-group">
-    <%= f.label :sobitie %><br>
-    <%= f.text_area :sobitie, class: "form-control" %>
-  </div>
-  <div class="form-group">
-    <%= f.label :price %><br>
-    <%= f.text_field :price, class: "form-control" %>
-  </div>
-  <div class="actions">
-    <%= f.submit class: "btn btn-success" %>
-  </div>
+<%= simple_form_for(@listing) do |f| %>
+  <%= f.input :data, class: "form-control" %>
+  <%= f.input :sobitie, class: "form-control", label: "Event" %>
+  <%= f.input :price, class: "form-control" %>
+  <%= f.button :submit, class: "btn btn-success" %>
 <% end %>
+
