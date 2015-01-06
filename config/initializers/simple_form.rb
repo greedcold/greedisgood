@@ -159,7 +159,7 @@ SimpleForm.setup do |config|
 
   # Defines if the default input wrapper class should be included in radio
   # collection wrappers.
-  # config.include_default_input_wrapper_class = true
+  # config.include_dDiscourseefault_input_wrapper_class = true
 
   # Defines which i18n scope will be used in Simple Form.
   # config.i18n_scope = 'simple_form'
