@@ -1,27 +1,7 @@
 == README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Проект предназначен для ведения домашней бухгалтерии.
+Пользователь будет составлять список своих затрат за определенный период времени и сравнивать сумму этих затрат с прибылью, получаемую за тот же временной период.
+Также планируется создание некоторых целей, требующих материальных затрат
 
 
 Please feel free to use a different markup language if you do not plan to run
