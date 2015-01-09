@@ -4,5 +4,6 @@ class RenameColumnInListings < ActiveRecord::Migration
   end
 
   def down
-  end	
+  	rename_column :listings, :event, :sobitie
+  end
 end
