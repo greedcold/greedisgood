@@ -18,6 +18,7 @@ gem "figaro"
 gem 'devise'
 gem 'rubocop', require: false
 gem 'simple_form'
+gem 'jquery-ui-rails'
 
 
 
