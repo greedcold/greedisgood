@@ -1,5 +1,5 @@
 <%= simple_form_for(@listing) do |f| %>
-  <%= f.text_field :data %>
+  <%= f.input :data, as: :string %>
   <%= f.input :event %>
   <%= f.input :price %>
   <%= f.button :submit %>
