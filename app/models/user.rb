@@ -4,7 +4,9 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+class Admin < User
   validates :name, presence: true
+end
 
   has_many :listings, dependent: :destroy
 #существование списка зависит от существования пользователя который его создал,
