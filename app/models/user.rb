@@ -4,10 +4,6 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-class User < ActiveRecord::Base
-	validates :name, presence: true
-end
-
   has_many :listings, dependent: :destroy
 #существование списка зависит от существования пользователя который его создал,
 #и для того чтобы при удалении пользователя не удалились его списки вписываем dependent destroy
