@@ -3,7 +3,7 @@
 <table>
   <thead>
     <tr>
-      <th>Data</th>
+      <th>Date</th>
       <th>event</th>
       <th>Price</th>
       <th colspan="3"></th>
@@ -13,7 +13,7 @@
   <tbody>
     <% @listings.each do |listing| %>
       <tr>
-        <td><%= listing.data %></td>
+        <td><%= listing.date %></td>
         <td><%= listing.event %></td>
         <td><%= listing.price %></td>
         <td><%= link_to 'Show', listing, class: "btn btn-link" %></td>

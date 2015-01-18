@@ -18,7 +18,7 @@ class ListingsControllerTest < ActionController::TestCase
 
   test "should create listing" do
     assert_difference('Listing.count') do
-      post :create, listing: { data: @listing.data, price: @listing.price, event: @listing.event }
+      post :create, listing: { date: @listing.date, price: @listing.price, event: @listing.event }
     end
 
     assert_redirected_to listing_path(assigns(:listing))
@@ -35,7 +35,7 @@ class ListingsControllerTest < ActionController::TestCase
   end
 
   test "should update listing" do
-    patch :update, id: @listing, listing: { data: @listing.data, price: @listing.price, event: @listing.event }
+    patch :update, id: @listing, listing: { date: @listing.date, price: @listing.price, event: @listing.event }
     assert_redirected_to listing_path(assigns(:listing))
   end
 

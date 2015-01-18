@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  data: 9.99
+  date: 9.99
   event: MyText
   price: 9.99
 
 two:
-  data: 9.99
+  date: 9.99
   event: MyText
   price: 9.99

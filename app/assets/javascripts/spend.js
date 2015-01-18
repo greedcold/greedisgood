@@ -1,2 +1,2 @@
 jQuery ->
-	$('#listing_data').datepicker()
+	$('#listing_date').datepicker()

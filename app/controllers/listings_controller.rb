@@ -49,7 +49,7 @@ def spend
     end
 
     def listing_params
-      params.require(:listing).permit(:data, :event, :price)
+      params.require(:listing).permit(:date, :event, :price)
     end
 
     def check_user
