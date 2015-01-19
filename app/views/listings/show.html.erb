@@ -15,7 +15,7 @@
   <%= @listing.price %>
 </p>
 
-<% if current_user == @listing.user %>
+<% if can? :update, @listing %>
 	<%= link_to 'Edit', edit_listing_path(@listing), class: "btn btn-link" %>
 <% end %>
 
