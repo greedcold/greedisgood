@@ -1,7 +1,7 @@
 class ListingsController < ApplicationController
-  #before_action :set_listing, only: [:show, :edit, :update, :destroy]
-  #before_action :authenticate_user!, only: [:spend, :new, :create, :edit, :update, :destroy]
-  #before_action :check_user, only: [:edit, :update, :destroy]
+  before_action :set_listing, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:spend, :new, :create, :edit, :update, :destroy]
+  before_action :check_user, only: [:edit, :update, :destroy]
 
   respond_to :html
 
@@ -55,6 +55,6 @@ def spend
     def check_user
       if current_user != @listing.user
         redirect_to root_url, alert: "you are not acces to this listing"
-      end
     end
+  end
 end
