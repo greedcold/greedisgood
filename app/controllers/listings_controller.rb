@@ -53,8 +53,8 @@ def spend
     end
 
     def check_user
-      if current_user != @listing.user
-        redirect_to root_url, alert: "you are not acces to this listing"
-    end
+    # if current_user != @listing.user
+     #  redirect_to root_url, alert: "you are not acces to this listing"
+    #end
   end
 end

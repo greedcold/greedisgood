@@ -14,8 +14,7 @@
       :password,
       :password_confirmation,
       :roles,
-      :role_ids,
-      :user_id)
+      :role)
     }
 
   end
