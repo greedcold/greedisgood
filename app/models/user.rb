@@ -13,6 +13,8 @@ class User < ActiveRecord::Base
 #и для того чтобы при удалении пользователя не удалились его списки вписываем dependent destroy
   ROLES = %w[admin author]
 
+  ROLES.freeze
+
   def role_symbols
     [role.to_sym]
   end

@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   get 'spend' => "listings#spend"
 
+  get 'results', to: 'results#index', as: 'results'
+
   root 'listings#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
